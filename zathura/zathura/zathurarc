@@ -1,0 +1,48 @@
+# Basic settings
+set font "Iosevka NFM 9"
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 	1
+set recolor "true"
+
+# Keybinds
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+
+# Colors
+set default-fg                "#d8dee9"
+set default-bg                "#242933"
+set completion-bg             "#282828"
+set completion-fg             "#d8dee9"
+set completion-highlight-bg   "#d08770"
+set completion-highlight-fg   "#242933"
+set completion-group-bg       "#282828"
+set completion-group-fg       "#d8dee9"
+set statusbar-fg              "#d8dee9"
+set statusbar-bg              "#242933"
+set inputbar-fg               "#d8dee9"
+set inputbar-bg               "#282828"
+set notification-bg           "#b48ead"
+set notification-fg           "#242933"
+set notification-error-bg     "#ebcb8b"
+set notification-error-fg     "#242933"
+set notification-warning-bg   "#ebcb8b"
+set notification-warning-fg   "#242933"
+set recolor-lightcolor        "#242933"
+set recolor-darkcolor         "#d8dee9"
+set index-fg                  "#b48ead"
+set index-bg                  "#242933"
+set index-active-fg           "#d08770"
+set index-active-bg           "#242933"
+set render-loading-bg         "#242933"
+set render-loading-fg         "#d8dee9"
+set highlight-color           "#d08770"
+set highlight-fg              "#242933"
+set highlight-active-color    "#282828"

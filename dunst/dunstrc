@@ -1,0 +1,48 @@
+#
+#   ▄████  ▄████▄
+#  ██▒ ▀█▒▒██▀ ▀█
+# ▒██░▄▄▄░▒▓█    ▄  Galib Chowdhury (GC)
+# ░▓█  ██▓▒▓▓▄ ▄██▒ https://github.com/zistro
+# ░▒▓███▀▒▒ ▓███▀ ░
+#  ░▒   ▒ ░ ░▒ ▒  ░
+#   ░   ░   ░  ▒
+# ░ ░   ░ ░
+#       ░ ░ ░
+#         ░
+# A customized configuration for dunst (https://dunst-project.org)
+# Modified by Galib Chowdhury (https://github.com/zistro)
+
+[global]
+# General
+follow = mouse
+sort = yes
+word_wrap = yes
+timeout = 2
+set_stack_tag = synchronous
+# Geometry
+offset = (5, 40)
+width = (210, 360)
+padding = 10
+horizontal_padding = 8
+text_icon_padding = 2
+gap_size = 2
+frame_width = 2
+corner_radius = 8
+
+# Icon
+# icon_theme =
+max_icon_size = 64
+enable_recursive_icon_lookup = true
+
+# Font
+font = Iosevka NFM 11
+alignment = center
+vertical_alignment = center
+markup = full
+
+# Colors
+separator_color = frame
+frame_color = "#d08770"
+background = "#242933"
+foreground = "#d8dee9"
+highlight = "#bf616a"

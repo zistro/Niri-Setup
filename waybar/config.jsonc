@@ -1,0 +1,122 @@
+//
+//   ▄████  ▄████▄
+//  ██▒ ▀█▒▒██▀ ▀█
+// ▒██░▄▄▄░▒▓█    ▄  Galib Chowdhury (GC)
+// ░▓█  ██▓▒▓▓▄ ▄██▒ https://github.com/zistro
+// ░▒▓███▀▒▒ ▓███▀ ░
+//  ░▒   ▒ ░ ░▒ ▒  ░
+//   ░   ░   ░  ▒
+// ░ ░   ░ ░
+//       ░ ░ ░
+//         ░
+// A customized configuration for Waybar (https://github.com/Alexays/Waybar)
+// Modified by Galib Chowdhury (https://github.com/zistro)
+
+{
+	"layer": "top",
+	"position": "top",
+	"mode": "dock",
+	"no-center": "true",
+	"exclusive": true,
+	"passthrough": false,
+	"reload_style_on_change": true,
+	"modules-left": [
+		"niri/workspaces",
+		"niri/window"
+	],
+	"modules-right": [
+		"backlight",
+		"battery",
+		"pulseaudio",
+		"disk",
+		"cpu",
+		"memory",
+		"network",
+		"clock",
+		"tray"
+	],
+
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{name}"
+	},
+
+	"niri/workspaces": {
+		"format": "{icon}"
+	},
+
+	"niri/window": {
+		"format": "{app_id}"
+	},
+
+	"tray": {
+		"icon-size": 13,
+		"spacing": 10,
+		"tooltip": false
+	},
+
+	"clock": {
+		"format":  "<span color='#ebcb8b'>󰥔</span> {:%I:%M %p}",
+		"interval": 40,
+		"tooltip": false
+	},
+
+	"cpu": {
+		"interval": 1,
+		"format": "<span color='#ebcb8b'>CPU</span> {load}% ",
+		"tooltip": false
+	},
+
+	"memory": {
+		"interval": 5,
+		"format": "<span color='#ebcb8b'></span> {used}G ",
+		"tooltip": false
+	},
+
+	"pulseaudio": {
+		"format": "<span color='#ebcb8b'>VOL</span> {volume}% ",
+		"format-muted": "<span color='#ebcb8b'>MUTED</span> ",
+		"on-click": "pamixer -t",
+		"on-scroll-up": "pamixer -i 5",
+		"on-scroll-down": "pamixer -d 5",
+		"scroll-step": 5,
+		"tooltip": false
+	},
+
+	"network": {
+		"format-wifi" : "<span color='#ebcb8b'>󰤨</span> {essid} ",
+		"format-ethernet": "<span color='#ebcb8b'>Ethernet</span> ",
+		"format-disconnected" : "<span color='#ebcb8b'>No Wifi</span> ",
+		"tooltip": "false",
+		"interval": 5,
+		"nospacing": 1
+	},
+
+	"disk": {
+		"format": "<span color='#ebcb8b'></span> {used} ",
+		"interval": 1800,
+		"tooltip": false
+	},
+
+	"battery": {
+		"interval": 60,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"events": {
+			"on-discharging-warning": "notify-send -u normal 'Low Battery'",
+			"on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+			"on-charging-100": "notify-send -u normal 'Battery Full!'"
+		},
+		"format": "<span color='#ebcb8b'>{icon}</span> {capacity}%",
+		"format-charging": "<span color='#a3be8c'>󱐋</span> {capacity}%",
+		"format-icons": ["", "", "", "", ""]
+	},
+
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "<span color='#ebcb8b'></span> {percent}%"
+	}
+}

@@ -1,0 +1,5 @@
+# Ignore everything directly in the root fish/ directory
+/fish/*
+
+# Whitelist config.fish
+!/fish/config.fish
