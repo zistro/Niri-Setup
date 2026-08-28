@@ -35,7 +35,7 @@ max_icon_size = 64
 enable_recursive_icon_lookup = true
 
 # Font
-font = Iosevka NFM 11
+font = ComicShannsMono Nerd Font 11
 alignment = center
 vertical_alignment = center
 markup = full

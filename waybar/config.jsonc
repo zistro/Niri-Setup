@@ -117,6 +117,7 @@
 
 	"backlight": {
 		"device": "intel_backlight",
-		"format": "<span color='#ebcb8b'></span> {percent}%"
+		"format": "<span color='#ebcb8b'></span> {percent}%",
+		"tooltip": false
 	}
 }
