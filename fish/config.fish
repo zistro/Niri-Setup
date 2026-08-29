@@ -56,6 +56,7 @@ function n --wraps nnn --description 'support nnn quit and change directory'
 end
 
 ### Set variables ###
+set -gx QT_QPA_PLATFORMTHEME gtk3
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx FZF_DEFAULT_OPTS $FZF_DEFAULT_OPTS' --color=fg:#d8dee9,bg:#242933,hl:#ebcb8b --color=fg+:#d8dee9,bg+:#434c5e,hl+:#a3be8c --color=info:#bf616a,prompt:#ebcb8b,pointer:#ebcb8b --color=marker:#d08770,spinner:#d08770,header:#b48ead'
@@ -105,3 +106,4 @@ alias pman='sudo pacman'
 alias lsblk='lsblk | bat -l conf -p'
 # flatpak
 alias flatin='flatpak install --user'
+alias flatun='flatpak uninstall'
