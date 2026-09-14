@@ -316,7 +316,7 @@ window-rule {
 
 // Changes corner radius
 window-rule {
-	geometry-corner-radius 8
+	geometry-corner-radius 0
 	clip-to-geometry true
 }
 // Example: block out two password managers from screen capture.
@@ -622,5 +622,9 @@ binds {
 	// Powers off the monitors. To turn them back on, do any input like
 	// moving the mouse or pressing any other key.
 	Mod+Shift+P { power-off-monitors; }
+
+	// Bluetooth connect & disconnect
+	Mod+B { spawn "btctl" "connect";}
+	Mod+Shift+B { spawn "btctl" "disconnect";}
 } 
 

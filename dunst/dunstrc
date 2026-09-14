@@ -27,7 +27,7 @@ horizontal_padding = 8
 text_icon_padding = 2
 gap_size = 2
 frame_width = 2
-corner_radius = 8
+corner_radius = 0
 
 # Icon
 # icon_theme =
