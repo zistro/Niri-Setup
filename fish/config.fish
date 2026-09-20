@@ -92,8 +92,8 @@ alias la='eza -a --color=always --group-directories-first'
 alias ll='eza -al --color=always --group-directories-first'
 alias lt='eza -aT --color=always --group-directories-first'
 # cp,rm,mv verbose
-alias rm='rm -rv'
-alias cp='cp -rv'
+alias rm='rm -r'
+alias cp='cp -r'
 alias mv='mv -v'
 # bat
 alias cat='bat'
