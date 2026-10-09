@@ -107,3 +107,5 @@ alias lsblk='lsblk | bat -l conf -p'
 # flatpak
 alias flatin='flatpak install --user'
 alias flatun='flatpak uninstall'
+# reflector
+alias update-mirros='sudo reflector --sort rate --save /etc/pacman.d/mirrorlist -c Singapore -l 10'
